@@ -27,7 +27,7 @@ header ul li{
 header ul li a{
     text-decoration: none;
     padding: 0 20px;
-    color: #646060;
+    color: #5252ee;
     font-weight: bold;
     display: inline-block;
 }
@@ -40,11 +40,70 @@ header ul li a::after{
     display: block;
     height: 4px;
     width: 0;
-    background: #c7c4c4;
+    background: #5252ee;
     transition: all .5s;
     
 }
 
+
 header ul li a:hover::after{
     width: 100%;
+}
+
+/*main*/
+
+main {
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 1220px;
+    margin: 10px auto;
+}
+
+.hero-img{
+    max-width: 700px;
+    margin: auto;
+}
+.content-left{
+    width: 40%;
+}
+.content-left h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #5252ee;
+    font-weight: 400;
+    padding-top: 5px;
+    letter-spacing: 2px;
+}
+.content-left h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #f3c64a;
+}
+.content-left p{
+    font-weight: 400;
+    color: #2d2d2f;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 30px 0;
+}
+
+.content-left .btn{
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: white;
+    background-color: #4c00ff;
+    border-radius: 4px;
+    font-size: 18px;
+    box-shadow: inset  0 0 0 0 #318ce2;
+    transition: ease-out 0.3s;
+    outline: none;
+
+}
+.content-left .btn:hover{
+    box-shadow: inset 200px 0 0 0  #318ce2;
+    color: #f3c64a;
 }
